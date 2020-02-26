@@ -55,7 +55,14 @@ $.ajax(settings).done(function (response) {
 function calculate(){
   amount = $("#dollarAmount").val()
   var result = rate * amount;
-  var formattedResult = result.toFixed(2);
-  $("#output").text("$" + formattedResult);
-  $("#rate").text("Exchange Rate: " + rate + "%");
+  formatResult(result)
 }
+
+function formatResult(x) {
+  var formattedResult = x.toFixed(2);
+  var withComma = formattedResult.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  //posting to DOM
+  $("#output").text("$" + withComma);
+  $("#rate").text(rate + "%");
+}
+
