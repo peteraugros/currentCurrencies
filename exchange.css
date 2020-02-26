@@ -1,0 +1,47 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.styled-div{
+    margin: auto;
+    background-color: goldenrod;
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+button{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: green;
+}
+input{
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    background-color:#DCDCDC;
+}
+
+p{
+    font-size: 25px;
+    font-weight:  bold;
+}
+
+select{
+    height: 45px;
+    border-radius: 10px;
+    background-color:#DCDCDC;
+}
+
+#title{
+    text-align: center;
+    color: #fcc603;
+    font-size: 110px;
+}
+
+h1{
+    font-family: 'Montserrat', 'Sans Serif';
+}

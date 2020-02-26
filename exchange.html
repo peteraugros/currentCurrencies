@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="exchange.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="exchange.css">
+
+  <title>Exchange Rate App</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 id="title">Current Currencies</h1> 
+          <p class="lead" style="text-align: center;">The most uptodate rates at the right price; free.</p>
+        </div>
+      </div>
+   
+ <div class="styled-div">
+  <h2>Amount of money to exchange:</h2>
+  <input type="text" id="dollarAmount" placeholder="$" />
+  <br>
+  <h3>Currency you want to switch from:</h3>
+  <select id='userInputFrom'>
+    <option value=''>- Please choose -</option>
+    <option value='USD'>US Dollar</option>
+    <option value='EUR'>Euro</option>
+    <option value='AUD'>Australian Dollar</option>
+    <option value='GBP'>Great British Pound</option>
+    <option value='JPY'>Japanese Yen</option>
+</select>
+<h3>Currency you want to switch to:</h3>
+<select id='userInputTo'>
+  <option value=''>- Please choose -</option>
+  <option value='USD'>US Dollar</option>
+  <option value='EUR'>Euro</option>
+  <option value='AUD'>Australian Dollar</option>
+  <option value='GBP'>Great British Pound</option>
+  <option value='JPY'>Japanese Yen</option>
+</select>
+  <br><br>
+  <button onclick="updateSearchTerm()">Submit</button>
+  <br>
+  <p id="output"></p>
+  <p id="rate"></p>
+  <br>
+</div>
+  <br>
+  <br>
+</body>
+
+</html>
