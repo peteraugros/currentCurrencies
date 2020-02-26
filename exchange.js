@@ -5,6 +5,7 @@ var amount;
 var rate;
 
   function updateSearchTerm(){
+
     userInputTo = $("#userInputTo").val()
     userInputFrom = $("#userInputFrom").val()
     console.log("userInputTo:", userInputTo)
@@ -54,8 +55,10 @@ $.ajax(settings).done(function (response) {
 
 function calculate(){
   amount = $("#dollarAmount").val()
+  if(amount && userInputTo && userInputFrom ){
   var result = rate * amount;
   formatResult(result)
+  }
 }
 
 function formatResult(x) {
